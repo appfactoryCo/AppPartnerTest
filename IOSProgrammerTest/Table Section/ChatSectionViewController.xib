@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatSectionViewController">
+            <connections>
+                <outlet property="tableView" destination="udg-gG-eTY" id="c0e-hS-RSA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="udg-gG-eTY">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                    <color key="separatorColor" red="0.36602564102564106" green="0.36602564102564106" blue="0.36602564102564106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Qfb-t0-gjY"/>
+                        <outlet property="delegate" destination="-1" id="Iog-10-8d2"/>
+                    </connections>
+                </tableView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OwD-SQ-ivE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4gX-yN-70c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.27058823529411763" blue="0.33725490196078434" alpha="0.8999730603448276" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="cSy-3B-iw5"/>
+                    </constraints>
+                    <vibrancyEffect>
+                        <blurEffect style="light"/>
+                    </vibrancyEffect>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-nK-YDq">
+                    <rect key="frame" x="0.0" y="24" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Nhg-Ty-nXn"/>
+                        <constraint firstAttribute="height" constant="40" id="Oze-rU-QIL"/>
+                    </constraints>
+                    <state key="normal" image="btn_back.png"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="g4B-rV-KRp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-qX-Q07">
+                    <rect key="frame" x="130" y="30" width="60" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="bme-3N-iVS"/>
+                        <constraint firstAttribute="width" constant="60" id="ug2-8h-YcH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lys-qX-Q07" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="78B-o2-ajF"/>
+                <constraint firstItem="fCg-nK-YDq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YA7-dF-jOk"/>
+                <constraint firstItem="fCg-nK-YDq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="acd-qe-lyp"/>
+                <constraint firstAttribute="bottom" secondItem="udg-gG-eTY" secondAttribute="bottom" id="c1c-EX-JqY"/>
+                <constraint firstAttribute="trailing" secondItem="OwD-SQ-ivE" secondAttribute="trailing" id="c8r-QT-QF9"/>
+                <constraint firstItem="OwD-SQ-ivE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ier-Nb-c56"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lcA-sb-dxl"/>
+                <constraint firstItem="OwD-SQ-ivE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="njk-0g-adB"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="off-jh-WIh"/>
+                <constraint firstItem="Lys-qX-Q07" firstAttribute="centerY" secondItem="fCg-nK-YDq" secondAttribute="centerY" id="phr-on-Zd0"/>
+                <constraint firstAttribute="trailing" secondItem="udg-gG-eTY" secondAttribute="trailing" id="sPj-OM-wo8"/>
+                <constraint firstItem="udg-gG-eTY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tGa-Ya-E9a"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="8" left="200" bottom="8" right="8"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back.png" width="41" height="41"/>
+    </resources>
+</document>

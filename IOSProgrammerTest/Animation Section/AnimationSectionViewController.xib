@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationSectionViewController">
+            <connections>
+                <outlet property="apIcon" destination="3gu-xx-pre" id="hXd-W7-5Uc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_animation" translatesAutoresizingMaskIntoConstraints="NO" id="yUv-eN-oXQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2p9-Id-zJA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iSY-bo-YJF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.27058823529411763" blue="0.33725490196078434" alpha="0.90412176724137927" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="EIu-bN-7Lr"/>
+                    </constraints>
+                    <vibrancyEffect>
+                        <blurEffect style="light"/>
+                    </vibrancyEffect>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-IL-RFt">
+                    <rect key="frame" x="0.0" y="24" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Oaz-He-3Ih"/>
+                        <constraint firstAttribute="width" constant="40" id="X39-LB-w3m"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                    <state key="normal" image="btn_back">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="smt-Qj-UGc"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gpc_logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-xx-pre">
+                    <rect key="frame" x="90" y="218" width="140" height="132"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="132" id="AQt-VZ-11Y"/>
+                        <constraint firstAttribute="width" constant="140" id="wsC-WB-waO"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-xN-mgW">
+                    <rect key="frame" x="39" y="467" width="242" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="242" id="gxV-nl-k3O"/>
+                        <constraint firstAttribute="height" constant="56" id="j4A-2I-YKT"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                    <state key="normal" title="Spin" backgroundImage="btn_bg_spin"/>
+                    <connections>
+                        <action selector="spinAction:" destination="-1" eventType="touchUpInside" id="rZZ-AI-QsC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcl-oZ-O7e">
+                    <rect key="frame" x="104" y="33" width="112" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="O7f-mc-sj8"/>
+                        <constraint firstAttribute="height" constant="22" id="hkG-c3-JDE"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yUv-eN-oXQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2MJ-a8-w1m"/>
+                <constraint firstAttribute="trailing" secondItem="2p9-Id-zJA" secondAttribute="trailing" id="6ls-QV-E5R"/>
+                <constraint firstAttribute="bottom" secondItem="mWf-xN-mgW" secondAttribute="bottom" constant="45" id="9Fa-jH-yKC"/>
+                <constraint firstItem="2p9-Id-zJA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DAd-Cv-jYt"/>
+                <constraint firstItem="yUv-eN-oXQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NZk-fr-3P2"/>
+                <constraint firstItem="Wcl-oZ-O7e" firstAttribute="centerY" secondItem="Tbj-IL-RFt" secondAttribute="centerY" id="PnH-OM-Kje"/>
+                <constraint firstAttribute="bottom" secondItem="yUv-eN-oXQ" secondAttribute="bottom" id="QB4-IZ-eWj"/>
+                <constraint firstItem="Wcl-oZ-O7e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="REM-Tk-UPX"/>
+                <constraint firstAttribute="trailing" secondItem="yUv-eN-oXQ" secondAttribute="trailing" id="ULw-wk-API"/>
+                <constraint firstItem="Tbj-IL-RFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wk0-No-1xq"/>
+                <constraint firstItem="2p9-Id-zJA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l08-Bj-ITi"/>
+                <constraint firstItem="3gu-xx-pre" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qa5-2q-h9Q"/>
+                <constraint firstItem="Tbj-IL-RFt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="rNN-Zk-5LR"/>
+                <constraint firstItem="3gu-xx-pre" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uIB-7G-5pR"/>
+                <constraint firstItem="mWf-xN-mgW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xdi-ti-xmC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_animation" width="320" height="568"/>
+        <image name="btn_back" width="41" height="41"/>
+        <image name="btn_bg_spin" width="245" height="56"/>
+        <image name="gpc_logo_icon" width="140" height="132"/>
+    </resources>
+</document>
