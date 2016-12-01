@@ -1,10 +1,3 @@
-//
-//  ChatData.m
-//  IOSProgrammerTest
-//
-//  Created by Justin LeClair on 12/19/14.
-//  Copyright (c) 2014 AppPartner. All rights reserved.
-//
 
 #import "ChatData.h"
 
